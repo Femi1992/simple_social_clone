@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +36,7 @@
                       <li><a href="{% url 'groups:create' %}" class="btn btn-simple">Create Group</a></li>
                       <li><a href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a></li>
     						{% else %}
-    						      <li><a href="{% url 'groups:all' %}"class="btn btn-simple">Groups</a></li>
+                                  <li><a href="{% url 'groups:all' %}"class="btn btn-simple">Groups</a></li>
     						      <li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
     						      <li><a href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
     						{% endif %}
